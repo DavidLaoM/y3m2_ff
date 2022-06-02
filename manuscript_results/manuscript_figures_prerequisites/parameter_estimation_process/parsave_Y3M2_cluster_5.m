@@ -1,0 +1,6 @@
+% function parsave_Y3M2_cluster3(fname, xres, resnorm, residual, exitflag, warray, t, selPars, T_FF01,Y_FF01,V_FF01,error,errorSim,errorLam)
+function parsave_Y3M2_cluster_5(saveName,xres,resnorm,residual,exitflag,t,warray,selPars,T_FF01,Y_FF01,V_FF01, error, errorSim, errorLam)
+  save(saveName, 'xres', 'resnorm', 'residual', ...
+      'exitflag', 'warray', 't', 'selPars', ...
+      'T_FF01', 'Y_FF01', 'V_FF01', 'error', 'errorSim', 'errorLam')
+end
