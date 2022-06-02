@@ -7,7 +7,7 @@ Citation: TBA.
 Keywords: Saccharomyces cerevisiae; carbon storage metabolism; feast famine regime; adaptation; glucose transport; kinetic modeling; parameter estimation.
 
 Description: 
-This repository contains the work behind our research and the required code and data to reproduce the figures in the manuscript and working simulations with the model developed. This work consisted of the furthere development of the parameter estimation toolbox developed in the 'y3m1_ss_gp' repository. This was aimed at dealing with a new case study (data, model complexity). New parts in the model were developed and validated and subsequent simulations were analysed. 
+This repository contains the work behind our research and the required code and data to reproduce the figures in the manuscript and working simulations with the model developed. This work consisted of the further development of the parameter estimation toolbox developed in the 'y3m1_ss_gp' repository. This was aimed at dealing with a new case study (data, model complexity). New parts in the model were developed and validated and subsequent simulations were analysed. 
 The model consists of a series of ordinary differential equations (ODE) representing the mass balances involved in each reaction. New reactions added concern carbon storage metabolism. The new conditions being reproduced are glucose feast famine regimes.
 
 Required software:
