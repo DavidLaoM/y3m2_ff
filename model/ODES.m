@@ -45,6 +45,7 @@ v(40) = v_glycSynth - v_glycDeg; % Vbroth
 
 %% optional: Setting metabolite dcdts to zero - select by comment/uncommenting
 NI = [];
+% disp(v(36))
 
 % TREic
 % NI = 25;

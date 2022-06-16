@@ -185,6 +185,7 @@ IC = IC';
 [T_gp,Y_gp] = ode15s(@ODE_model_Y3M1_FFsims,tspan,IC,options,p,f,d,setup, dataset);
 T = T_gp;
 Y = Y_gp; 
+
 % % % % % UDP_GLC_exp = (interp1(dataset.FF01.metabolites.ICUDPG.time,dataset.FF01.metabolites.ICUDPG.conc,tspan,'pchip','extrap'))';
 calcFluxes_consensus_Y3M1;
 % Clamps
@@ -237,6 +238,15 @@ for xx = 1:(n-1)
     IC = Y(end,:);
     fprintf('cycle number %d, time elapsed %d.\n', xx, temp)
 end
+
+% figure%(21)
+% for i = [1:38,40]
+%     subplot(5,8,i)
+%     plot(T_gp,Y_gp(:,i),'bl','linewidth',1.5)
+%     if i <= 38
+%         title(legenda.metabolites{i})
+%     end
+% end
 
 % Simulation 4. Enrichment simulation
 InitCond_enrichcycle
